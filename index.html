@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		
+		body {
+			background-color: grey; background-image: url(https://cdn.britannica.com/83/189283-050-DF7E0E75/Banknotes-world.jpg);  background-repeat: no-repeat; background-size: cover; background-attachment: fixed; 
+		}
+
+		.container {
+			 background-color: white;  padding: 20px; border-radius: 20px;
+		}
+
+		.container2 {
+			 background-color: white;  padding: 20px; border-radius: 20px;  width: 120px; height: 75px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<center>
+
+	<br><br>
+
+	<h1 style="background-color: white;  padding: 20px; border-radius: 20px; width: 750px;">Informational Money Converter</h1>
+
+	<br><br>
+
+	<h2 style="background-color: white;  padding: 20px; border-radius: 20px; width: 800px;">Enter the desired number of Pesos to convert!</h2>
+
+	<br><br>
+
+	<label for="userInputField" style="background-color: white;  padding: 20px; border-radius: 20px;">Enter a value: </label>
+
+  	<input type="text" id="userInputField">
+
+  	<script>
+
+    function getUserInput() {
+      let userInput = document.getElementById('userInputField').value; 
+    }
+
+  	</script>
+
+	<br><br><br><br>
+
+	<h2 style="background-color: white;  padding: 20px; border-radius: 20px; width: 600px;">Currencies to convert to:</h2>
+
+	<br><br>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-3">
+
+			<button type="button" class="btn btn-outline-dark" onclick="var userInput = document.getElementById('userInputField').value; b=0.0171057133; c=userInput*b; document.getElementById('show1').innerHTML = c + '$' ; onclick=getUserInput()">Dollar</button>
+
+			</div>
+
+			<div class="col-md-3">
+
+			<button type="button" class="btn btn-outline-dark" onclick="var userInput = document.getElementById('userInputField').value; b=0.06418485237; c=userInput*b; document.getElementById('show1').innerHTML = c + 'SAR' ; onclick=getUserInput()">Saudi Riyal</button>
+
+			</div>
+
+			<div class="col-md-3">
+
+			<button type="button" class="btn btn-outline-dark" onclick="var userInput = document.getElementById('userInputField').value; b=2.7027027027; c=userInput*b; document.getElementById('show1').innerHTML = c + '¥' ; onclick=getUserInput()">Yen</button>
+
+			</div>
+
+			<div class="col-md-3">
+
+			<button type="button" class="btn btn-outline-dark" onclick="var userInput = document.getElementById('userInputField').value; b=1.75438596491; c=userInput*b; document.getElementById('show1').innerHTML = c + '₽' ; onclick=getUserInput()">Ruble</button>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<br><br>
+
+	<p id="show1" style="background-color: white;  padding: 20px; border-radius: 20px; width: 750px;">Result:</p>
+
+	<br><br>
+
+	<div class="container2">
+
+	<a href="index.html" class="btn btn-outline-dark" style="margin-bottom: 100px;" style="background-color: white; padding: 20px; border-radius: 20px;">Refresh</a>
+
+	</div>
+
+	</center>
+
+</body>
+
+</html>
